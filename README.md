@@ -37,7 +37,7 @@
 - установить на сервер `Node.js`   командами
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\`
 `sudo apt-get install -y nodejs`
-- установить зависимости frontend приложения. Из директории `<ваш проект>/frontend/` выполнить команды: `npm install` а затем `npm run build`
+- установить зависимости frontend приложения. Из директории `<ваш проект>/frontend/` выполнить команды: `npm install`
 
 ## Установка и запуск Gunicorn
 установить пакет gunicorn `pip install gunicorn==20.1.0`
@@ -48,8 +48,14 @@
  - На сервере из любой директории выполнить команду: `sudo apt install nginx -y`
 - Для установки ограничений на открытые порты выполнить по очереди команды: `sudo ufw allow 'Nginx Full'`  `sudo ufw allow OpenSSH`
 - включить файервол `sudo ufw enable`
+
+### собрать и настроить статику для backend-приложения.
+Выполнить команду `python manage.py collectstatic`
+- в директории_<имя_проекта>/backend/_ будет создана директория _static_backend/_ 
+- Скопировать директорию _static_backend/_ в директорию _/var/www/<имя_проекта>/_
 ### собрать и разместить статику frontend-приложения.
-- Перейти в директорию _<имя_проекта>/frontend/_  и выполнить команду `npm run build` Результат сохранится в директории ..._/frontend/build/_.  В системную директорию сервера _/var/www/_ скопировать содержимое папки _/frontend/build/_
+- Из директории _<имя_проекта>/frontend/_  выполнить команду `npm run build`
+- Скопировать директорию _/frontend/build/_ в директорию _/var/www/<имя_проекта>/_
 - открыть файл конфигурации веб-сервера `sudo nano /etc/nginx/sites-enabled/default` скопировав в него код из файла default который также можно найти в папке infra.
 
 

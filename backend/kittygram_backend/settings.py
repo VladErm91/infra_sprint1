@@ -8,9 +8,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = False
+DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['158.160.73.197', '127.0.0.1', 'localhost','hoffkittygramm.ddns.net']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(' ')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -19,10 +19,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'cats.apps.CatsConfig',
+
     'rest_framework.authtoken',
     'rest_framework',
     'djoser',
-    'cats.apps.CatsConfig',
 ]
 
 MIDDLEWARE = [

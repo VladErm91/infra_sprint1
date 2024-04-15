@@ -18,10 +18,10 @@
 ## Технологии
  - Python 3.10 либо выше
  - Django
- - djangorestframework
- - djoser
+ - Django Rest Framework
+ - Djoser
  - Nginx
- - gunicorn
+ - Gunicorn
  
 ## Установка проекта на локальный компьютер из репозитория 
  - Клонировать репозиторий `git clone <адрес вашего репозитория>`

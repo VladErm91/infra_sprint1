@@ -1,13 +1,20 @@
 # Kittygram - социальная сеть на самых минималках для размещение фотографий котиков. Учебный проект Яндекс.Практикум.
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) 
+![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray) 
+![Djoser](https://img.shields.io/badge/Djoser-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) 
+![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 
 ## Описание проекта
 Пользователи могут регистрироваться, загружать фотографии своих котиков с кратким описанием, и смотреть на котиков других пользователей.
-## Технологии
 
- - Python 3.10
- - Django==3.2.3
- - djangorestframework==3.12.4
- - djoser==2.1.0
+## Технологии
+ - Python 3.10 либо выше
+ - Django
+ - djangorestframework
+ - djoser
  - Nginx
  - gunicorn
  
@@ -18,9 +25,7 @@
  - установить зависимости `pip install -r requirements.txt`
  - в директории /backend/kittygram_backend/ создать файл .env
  - в файле .env прописать Значения переменных SECRET_KEY, DEBUG, ALLOWED_HOSTS в виде: `SECRET_KEY = '<ваш_ключ>', 'DEBUG = FALSE' , ALLOWED_HOSTS = 'localhost 127.0.0.1'
-
-# Деплой проекта на удаленный сервер
-
+   
 ## Подключение сервера к аккаунту на GitHub
 - на сервере должен быть установлен Git
 - если Git не установлен - установить командой `sudo apt install git`

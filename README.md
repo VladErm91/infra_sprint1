@@ -1,14 +1,19 @@
-# Kittygram - социальная сеть на самых минималках для размещение фотографий котиков. Учебный проект Яндекс.Практикум.
+# Kittygram - социальная сеть на самых минималках для размещение фотографий котиков.
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) 
-![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray) 
+![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Djoser](https://img.shields.io/badge/Djoser-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) 
 ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 
-## Описание проекта
-Пользователи могут регистрироваться, загружать фотографии своих котиков с кратким описанием, и смотреть на котиков других пользователей.
+Сайт «Kittygram». Онлайн-сервис и API где пользователь может опубликовать краткую информацию и фотографии своих любимых питомцев, посмотреть питомцев других пользователей, 
+
+### Функционал проекта Kittygram:
+- Регистрация пользователя
+- Загрузка,редактирование и удаление фотографий и информации о котиках
+- Возможность просмотра фотографий котиков других пользователей 
 
 ## Технологии
  - Python 3.10 либо выше
